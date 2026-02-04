@@ -1,0 +1,49 @@
+name: the_hitters_ledger
+description: Baseball mental performance app.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.2 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  share_plus: ^10.1.0
+  path_provider: ^2.1.2
+  intl: ^0.18.1
+  audioplayers: 4.1.0
+  shared_preferences: ^2.2.0
+  firebase_core: ^3.15.2
+  firebase_auth: ^5.7.0
+  cloud_firestore: ^5.6.12
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.0
+
+# This section defines your App Icon
+flutter_launcher_icons:
+  android: "launcher_icon"
+  image_path: "assets/icon.png"
+  min_sdk_android: 21
+
+# This section defines your Native Splash Screen (used by the OS)
+flutter_native_splash:
+  color: "#0F1113"
+  image: "assets/splash.png"
+  android_12:
+    image: "assets/splash.png"
+    icon_background_color: "#0F1113"
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/
+    - assets/splash.png
+    - assets/rake_meditation.mp3
+    - assets/pitchers_duel.mp3
